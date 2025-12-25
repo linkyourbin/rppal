@@ -1,0 +1,8 @@
+target/
+Cargo.lock
+
+# 屏蔽的文档文件
+PROJECT_SUMMARY.md
+FILE_MANIFEST.md
+CONTRIBUTIONS_CN.md
+CHANGELOG.md
