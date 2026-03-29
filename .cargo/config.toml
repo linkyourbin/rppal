@@ -2,10 +2,10 @@
 target = "aarch64-unknown-linux-gnu"
 
 [target.aarch64-unknown-linux-gnu]
-# 指定32位ARM的GCC链接器（推荐用gcc而非直接用ld）
+# linker
 linker = "D:/tool_chains/embedded_toolchain/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc.exe"
-# 若需手动传链接器参数，通过rustflags添加（可选）
+# flags
 rustflags = [
-    "-C", "link-arg=-lgcc",  # 链接GCC运行时库
+    "-C", "link-arg=-lgcc",  
     "-C", "target-feature=+crt-static"
 ]
